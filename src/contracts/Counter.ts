@@ -1,8 +1,8 @@
-import { Address, beginCell, Cell, Contract, contractAddress, ContractProvider, Sender, SendMode } from '@ton/core';
+import { Address, beginCell, Cell, Contract, contractAddress, ContractProvider, Sender} from '@ton/core';
 
-export type CounterConfig = {};
+export type CounterConfig = object;
 
-export function counterConfigToCell(config: CounterConfig): Cell {
+export function counterConfigToCell(_config: CounterConfig): Cell {
     return beginCell().endCell();
 }
 
